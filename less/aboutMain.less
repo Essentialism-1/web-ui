@@ -1,18 +1,29 @@
 .groups {
     .projectLead{
         .displayFlexJustifyCenter();
-
+        align-items: center;
+            justify-content: center;
         .proLead{
             .centeringAndAligning();
             margin:1%;
+            align-items: center;
+            justify-content: center;
         }// groups projectLead proLead end
     }// groups projectLead end
 
+    .everyone{
+        display:flex;
+        justify-content:space-around;
+        // align-items: flex-start;
+
     .backendDeveloper{
         .displayFlexJustifyCenter();
+        
 
         .bEndDev{
             .centeringAndAligning();
+            align-items: center;
+            justify-content: center;
             margin:1%;
         }// groups backendDeveloper bEndDev end
     }// groups backendDeveloper end
@@ -34,9 +45,9 @@
             margin:1%;
         }// groups userInterface ui1 ui2 end
     }// groups userInterface end
-
+    }// groups everyone end
         h3 {
-            font-size:2rem;
+            .teamInfoH3();
             margin:1%;
         }// groups h3 end
 
@@ -52,3 +63,6 @@ img {
     border-radius:75;
 }
 
+i{
+font-size:2rem;
+}

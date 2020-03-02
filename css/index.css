@@ -85,6 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -127,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid red;
   background-color: #2F4F4F;
 }
 html {
@@ -141,7 +141,7 @@ html {
   padding: 1%;
 }
 .navSection h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   color: #2F4F4F;
   padding: 1%;
   background-color: #DCDCDC;
@@ -161,7 +161,7 @@ html {
 .navSection .navBar nav a {
   text-decoration: none;
   color: #FF4500;
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #DCDCDC;
   margin: 1%;
 }
@@ -172,50 +172,55 @@ header {
 }
 header h2 {
   color: #2F4F4F;
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin: 1%;
   background-color: #DCDCDC;
 }
 .groups .projectLead {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .groups .projectLead .proLead {
   display: flex;
+  flex-direction: column;
+  margin: 1%;
+  align-items: center;
+  justify-content: center;
+}
+.groups .everyone {
+  display: flex;
+  justify-content: space-around;
+}
+.groups .everyone .backendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .everyone .backendDeveloper .bEndDev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+.groups .everyone .frontendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .everyone .frontendDeveloper .srReact,
+.groups .everyone .frontendDeveloper .jrReact {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 1%;
 }
-.groups .backendDeveloper {
+.groups .everyone .userInterface {
   display: flex;
   justify-content: center;
 }
-.groups .backendDeveloper .bEndDev {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 1%;
-}
-.groups .frontendDeveloper {
-  display: flex;
-  justify-content: center;
-}
-.groups .frontendDeveloper .srReact,
-.groups .frontendDeveloper .jrReact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 1%;
-}
-.groups .userInterface {
-  display: flex;
-  justify-content: center;
-}
-.groups .userInterface .ui1,
-.groups .userInterface .ui2 {
+.groups .everyone .userInterface .ui1,
+.groups .everyone .userInterface .ui2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -223,12 +228,15 @@ header h2 {
   margin: 1%;
 }
 .groups h3 {
-  font-size: 2rem;
+  color: #DCDCDC;
+  font-size: 2.66rem;
+  width: 100%;
   margin: 1%;
 }
 .groups h4 {
   color: #FF4500;
-  font-size: 1.66rem;
+  font-size: 2.5rem;
+  width: 100%;
   margin: 1%;
 }
 img {
@@ -236,7 +244,11 @@ img {
   width: 200px;
   border-radius: 75;
 }
+i {
+  font-size: 2rem;
+}
 footer {
   display: flex;
   justify-content: center;
+  font-size: 2rem;
 }
