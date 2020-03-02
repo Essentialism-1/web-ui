@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  background-color: #2F4F4F;
 }
 html {
   font-size: 62.5%;
@@ -137,32 +136,33 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DCDCDC;
+  background-image: url("../img/navBarImg.jpg");
+  background-repeat: no-repeat;
   padding: 1%;
 }
 .navSection h1 {
   font-size: 7rem;
   color: #2F4F4F;
   padding: 1%;
-  background-color: #DCDCDC;
+  background-color: transparent;
 }
 .navSection .navBar {
   display: flex;
   justify-items: space-around;
   width: 75%;
-  background-color: #DCDCDC;
+  background-color: transparent;
 }
 .navSection .navBar nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #DCDCDC;
+  background-color: transparent;
 }
 .navSection .navBar nav a {
   text-decoration: none;
   color: #FF4500;
   font-size: 3rem;
-  background-color: #DCDCDC;
+  background-color: transparent;
   margin: 1%;
 }
 header {
@@ -239,6 +239,9 @@ header h2 {
   width: 100%;
   margin: 1%;
 }
+.groups a {
+  text-decoration: none;
+}
 img {
   height: 200px;
   width: 200px;
@@ -250,5 +253,10 @@ i {
 footer {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   font-size: 2rem;
+  margin-top: 2%;
+}
+footer a {
+  margin-left: 2%;
 }

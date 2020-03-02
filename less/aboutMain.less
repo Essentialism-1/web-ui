@@ -3,6 +3,7 @@
         .displayFlexJustifyCenter();
         align-items: center;
             justify-content: center;
+        
         .proLead{
             .centeringAndAligning();
             margin:1%;
@@ -16,53 +17,61 @@
         justify-content:space-around;
         // align-items: flex-start;
 
-    .backendDeveloper{
-        .displayFlexJustifyCenter();
+        .backendDeveloper{
+            .displayFlexJustifyCenter();
         
 
-        .bEndDev{
-            .centeringAndAligning();
-            align-items: center;
-            justify-content: center;
-            margin:1%;
-        }// groups backendDeveloper bEndDev end
-    }// groups backendDeveloper end
+            .bEndDev{
+                .centeringAndAligning();
+                align-items: center;
+                justify-content: center;
+                margin:1%;
+            }// groups everone backendDeveloper bEndDev end
+        }// groups everyone backendDeveloper end
     
-    .frontendDeveloper{
-        .displayFlexJustifyCenter();
+        .frontendDeveloper{
+            .displayFlexJustifyCenter();
 
-        .srReact, .jrReact{
-            .centeringAndAligning();
-            margin:1%;
-        }// groups srReact jrReact 
-    }// groups frontendDeveloper end
+            .srReact, .jrReact{
+                .centeringAndAligning();
+                margin:1%;
+            }// groups everyone frontendDeveloper srReact jrReact 
+        }// groups everyone frontendDeveloper end
 
-    .userInterface {
-        .displayFlexJustifyCenter();
+        .userInterface {
+            .displayFlexJustifyCenter();
 
-        .ui1, .ui2{
-            .centeringAndAligning();
-            margin:1%;
-        }// groups userInterface ui1 ui2 end
-    }// groups userInterface end
+            .ui1, .ui2{
+                .centeringAndAligning();
+                margin:1%;
+            }// groups everyone userInterface ui1 ui2 end
+        }// groups everyone userInterface end
     }// groups everyone end
-        h3 {
-            .teamInfoH3();
-            margin:1%;
-        }// groups h3 end
+        
+    h3 {
+        .teamInfoH3();
+        margin:1%;
+    }// groups h3 end
 
-        h4 {
+    h4 {
         .teamInfoH4();
         margin:1%;
     }// groups h4 end
+
+    a{
+        text-decoration: none;
+        &:hover{
+            
+        }
+    }// groups a end
 }// groups end
 
 img {
     height:200px;
     width:200px;
     border-radius:75;
-}
+}// img end
 
 i{
 font-size:2rem;
-}
+}// i end
