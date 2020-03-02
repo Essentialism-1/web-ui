@@ -3,20 +3,30 @@
     flex-direction:column;
     align-items:center;
     background-color:@navbgcolor;
+    padding:1%;
 
     h1{
         font-size:5rem;
         color: @navh1fontcolor;
+        padding: 1%;
 
     }//navSection h1 end
 
     .navBar{
         display:flex;
         justify-items: space-around;
+        width:75%;
 
-        a{
+        nav{
+            width:100%;
+            display:flex;
+            justify-content:center;
+
+            a{
             .linkFontStyling();
-        }// navSection navBar nav a end
+            margin: 1%;
+            }// navSection navBar nav a end
+        }// nav end
     }// navSection navBar end
 }// navSection end
 

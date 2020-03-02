@@ -137,19 +137,28 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: #DCDCDC;
+  padding: 1%;
 }
 .navSection h1 {
   font-size: 5rem;
   color: #2F4F4F;
+  padding: 1%;
 }
 .navSection .navBar {
   display: flex;
   justify-items: space-around;
+  width: 75%;
 }
-.navSection .navBar a {
+.navSection .navBar nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navSection .navBar nav a {
   text-decoration: none;
   color: #FF4500;
   font-size: 2rem;
+  margin: 1%;
 }
 header {
   display: flex;
@@ -158,10 +167,18 @@ header {
 header h2 {
   color: #2F4F4F;
   font-size: 3.5rem;
+  margin: 1%;
 }
 .groups .projectLead {
   display: flex;
   justify-content: center;
+}
+.groups .projectLead .proLead {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
 }
 .groups .backendDeveloper {
   display: flex;
@@ -172,20 +189,39 @@ header h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 1%;
 }
 .groups .frontendDeveloper {
   display: flex;
   justify-content: center;
 }
+.groups .frontendDeveloper .srReact,
+.groups .frontendDeveloper .jrReact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
 .groups .userInterface {
   display: flex;
   justify-content: center;
 }
+.groups .userInterface .ui1,
+.groups .userInterface .ui2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
 .groups .groups h3 {
   color: #2F4F4F;
   font-size: 2rem;
+  margin: 1%;
 }
 .groups .groups h4 {
   color: #696969;
   font-size: 1.66rem;
+  margin: 1%;
 }
