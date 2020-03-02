@@ -127,6 +127,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 html {
   font-size: 62.5%;
@@ -149,4 +150,42 @@ html {
   text-decoration: none;
   color: #FF4500;
   font-size: 2rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header h2 {
+  color: #2F4F4F;
+  font-size: 3.5rem;
+}
+.groups .projectLead {
+  display: flex;
+  justify-content: center;
+}
+.groups .backendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .backendDeveloper .bEndDev {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.groups .frontendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .userInterface {
+  display: flex;
+  justify-content: center;
+}
+.groups .groups h3 {
+  color: #2F4F4F;
+  font-size: 2rem;
+}
+.groups .groups h4 {
+  color: #696969;
+  font-size: 1.66rem;
 }
