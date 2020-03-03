@@ -163,7 +163,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid red;
   background-color: #2F4F4F;
   font-family: 'PT Sans', sans-serif;
 }
@@ -187,11 +186,21 @@ h4 {
   background-position: top center;
   padding: 1%;
 }
+@media (max-width: 800px) {
+  .navSection {
+    background-image: url("../img/navBarImg.jpg");
+  }
+}
 .navSection h1 {
   font-size: 7rem;
   color: #DCDCDC;
   padding: 1%;
   background-color: transparent;
+}
+@media (max-width: 800px) {
+  .navSection h1 {
+    font-size: 4rem;
+  }
 }
 .navSection .navBar {
   display: flex;
@@ -212,6 +221,16 @@ h4 {
   background-color: transparent;
   margin: 1%;
 }
+@media (max-width: 800px) {
+  .navSection .navBar nav a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .navSection .navBar nav a {
+    font-size: 1rem;
+  }
+}
 .navSection .navBar nav a:hover {
   animation-name: pulse;
   animation-duration: 5s;
@@ -223,6 +242,11 @@ h4 {
   background-position: top center;
   background-color: darkslategray;
   height: 666px;
+}
+@media (max-width: 800px) {
+  .mktHeader {
+    display: none;
+  }
 }
 .mktHeader .mktHeaderButton {
   height: 75px;
@@ -257,6 +281,24 @@ header h2 {
   justify-content: center;
   width: 100%;
 }
+@media (min-width: 800px) {
+  .centerImageSection .centerImagePortrait {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .centerImageSection {
+    height: 50%;
+    align-items: center;
+  }
+  .centerImageSection .centerImageLarge {
+    display: none;
+  }
+  .centerImageSection .centerImageLarge .centerImagePortrait {
+    display: block;
+    padding-top: 2%;
+  }
+}
 .centerButton {
   height: 75px;
   width: 300px;
@@ -271,10 +313,21 @@ header h2 {
   animation-name: pulse;
   animation-duration: 5s;
 }
+@media (max-width: 800px) {
+  .centerButton {
+    width: 250px;
+  }
+}
 .getStarted,
 .aboutUs {
   position: relative;
   left: 450px;
+}
+@media (max-width: 800px) {
+  .getStarted,
+  .aboutUs {
+    display: none;
+  }
 }
 .testimonials {
   justify-content: space-between;
@@ -296,11 +349,28 @@ header h2 {
   line-height: 5rem;
   color: cornsilk;
 }
+@media (max-width: 800px) {
+  .testimonials .testP {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .testimonials .testP {
+    width: 400px;
+    position: relative;
+    left: 45px;
+  }
+}
 .testimonials .testDF1 {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2%;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .testimonials .testDF1 {
+    flex-direction: column;
+  }
 }
 .testimonials .testDF2 {
   display: flex;
@@ -308,10 +378,20 @@ header h2 {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .testimonials .testDF2 {
+    flex-direction: column;
+  }
+}
 .testimonials .testhappy {
   width: 500px;
   height: 400px;
   border-radius: 50px;
+}
+@media (max-width: 500px) {
+  .testimonials .testhappy {
+    width: 400px;
+  }
 }
 .testimonials .fa-quote-right,
 .testimonials .fa-quote-left {
@@ -332,6 +412,11 @@ header h2 {
 .testimonials .testBtn:hover {
   animation-name: pulse;
   animation-duration: 5s;
+}
+@media (max-width: 800px) {
+  .testimonials .testBtn {
+    left: 90px;
+  }
 }
 .groups .projectLead {
   display: flex;
@@ -424,6 +509,16 @@ footer {
   font-size: 2rem;
   margin-top: 2%;
 }
+@media (max-width: 800px) {
+  footer {
+    font-size: 1rem;
+  }
+}
 footer a {
   margin-left: 2%;
+}
+@media (max-width: 800px) {
+  footer a {
+    font-size: 1rem;
+  }
 }

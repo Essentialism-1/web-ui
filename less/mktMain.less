@@ -4,8 +4,31 @@
     justify-content: center;
     // align-items:center ;
     width:100%;
-}
 
+    @media(min-width:800px){
+        .centerImagePortrait{
+            display:none;
+        }
+    }
+    @media @tablet{
+        height: 50%;
+        align-items: center;
+
+        .centerImageLarge{
+            display: none;
+            .centerImagePortrait{
+                display:block;
+                padding-top:2%;
+            }
+        }
+        
+
+    }// centerImageSection media Tablet end
+
+    @media @phone{
+
+    }// centerImageSection media PHone end
+}// centerImageSection end
 .centerButton {
     height:75px;
     width: 300px;
@@ -19,12 +42,19 @@
     &:hover{
         .linkHoverAnimation();
     }
-
+   @media @tablet{
+       width: 250px;
+   }
 }
 
 .getStarted, .aboutUs{
     position: relative;
     left: 450px;
+
+    @media @tablet{
+        display:none;
+
+    }
 }
 
 .testimonials{
@@ -50,6 +80,16 @@
         width:600px;
         line-height: 5rem;
         color: cornsilk;
+
+        @media @tablet{
+            width:500px;
+        }
+
+        @media @phone{
+            width:400px;
+            position:relative;
+            left:45px;
+        }
     }// end of testimonials testP
 
     .testDF1{
@@ -57,6 +97,11 @@
         justify-content:space-around;
         margin-bottom: 2%;
         align-items: center;
+
+        @media @tablet{
+            flex-direction:column;
+
+        }
     }// end of testimonials test df1
 
     .testDF2{
@@ -64,12 +109,20 @@
         flex-direction:row-reverse;
         justify-content:space-around;
         align-items: center;
+
+        @media @tablet{
+            flex-direction: column;
+        }
     }
 
     .testhappy{
         width: 500px;
         height: 400px;
         border-radius:50px;
+
+        @media @phone{
+            width:400px;
+        }
     }//end of testimonials testhappy
 
     .fa-quote-right, .fa-quote-left{
@@ -91,7 +144,10 @@
         &:hover{
             .linkHoverAnimation();
         }
-    
+        @media @tablet{
+            left:90px;
+        }
     }
     
 }// end of testimonials
+

@@ -7,6 +7,10 @@
     background-position: top center;
     padding:1%;
 
+    @media @tablet{
+        background-image: url("../img/navBarImg.jpg");
+    }
+
 
 
     h1{ 
@@ -14,6 +18,10 @@
         color: @gainsboro;
         padding: 1%;
         background-color:transparent;
+
+        @media @tablet{
+          font-size:4rem;
+        }
 
     }//navSection h1 end
 
@@ -37,6 +45,13 @@
             background-color: transparent;
              margin: 1%;
 
+             @media @tablet{
+                 font-size:1rem;
+             }
+             @media @phone{
+                 font-size: 1rem;
+             }
+
             &:hover{
                 .linkHoverAnimation();
             }//navSection navBar nav a hover end
@@ -44,4 +59,3 @@
         }// nav end
     }// navSection navBar end
 }// navSection end
-
