@@ -165,9 +165,18 @@ table {
   box-sizing: border-box;
   border: 1px solid red;
   background-color: #2F4F4F;
+  font-family: 'PT Sans', sans-serif;
 }
 html {
   font-size: 62.5%;
+}
+h1,
+h2 {
+  font-family: 'Comfortaa', cursive;
+}
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
 }
 .navSection {
   display: flex;
@@ -198,7 +207,7 @@ html {
 }
 .navSection .navBar nav a {
   text-decoration: none;
-  color: #FF4500;
+  color: #FFF8DC;
   font-size: 3rem;
   background-color: transparent;
   margin: 1%;
@@ -208,11 +217,28 @@ html {
   animation-duration: 5s;
 }
 .mktHeader {
-  background-color: darkslategray;
+  background-image: url("../img/indexImgMain.jpg");
   padding: 1%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: darkslategray;
+  height: 666px;
 }
-.mktHeader .mktHeaderImg {
-  width: 90%;
+.mktHeader .mktHeaderButton {
+  height: 75px;
+  width: 300px;
+  font-size: 3rem;
+  background-color: orangered;
+  color: gainsboro;
+  border-radius: 30px;
+  position: relative;
+  right: 150px;
+  top: 350px;
+  cursor: alias ;
+}
+.mktHeader .mktHeaderButton:hover {
+  animation-name: pulse;
+  animation-duration: 5s;
 }
 header {
   display: flex;
@@ -224,6 +250,48 @@ header h2 {
   font-size: 5rem;
   margin: 1%;
   background-color: #DCDCDC;
+}
+.centerImageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.centerButton {
+  height: 75px;
+  width: 300px;
+  font-size: 3rem;
+  background-color: orangered;
+  color: gainsboro;
+  border-radius: 30px;
+  cursor: alias ;
+  margin: 3%;
+}
+.centerButton:hover {
+  animation-name: pulse;
+  animation-duration: 5s;
+}
+.getStarted,
+.aboutUs {
+  position: relative;
+  left: 450px;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+}
+.testimonials .testH3 {
+  border: 1px solid red;
+  font-size: 4.5rem;
+  margin-bottom: 1%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.testimonials .testP {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
 }
 .groups .projectLead {
   display: flex;

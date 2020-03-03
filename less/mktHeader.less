@@ -1,8 +1,26 @@
 .mktHeader{
-    background-color: darkslategray;
+    background-image: url("../img/indexImgMain.jpg");
     padding:1%;
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-color:darkslategray;
+    height:666px;
 
-    .mktHeaderImg {
-        width:90%;
+    .mktHeaderButton {
+        height:75px;
+        width: 300px;
+        font-size:3rem;
+        background-color:orangered;
+        color: gainsboro;
+        border-radius:30px;
+        position: relative;
+        right: 150px;
+        top: 350px;
+        cursor: alias ;
+
+        &:hover{
+            .linkHoverAnimation();
+        }
+
     }// mktHeaderImg end
 }// mktheader end

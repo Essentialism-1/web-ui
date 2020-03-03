@@ -1,0 +1,50 @@
+.centerImageSection{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    // align-items:center ;
+    width:100%;
+}
+
+.centerButton {
+    height:75px;
+    width: 300px;
+    font-size:3rem;
+    background-color:orangered;
+    color: gainsboro;
+    border-radius:30px;
+    cursor: alias ;
+    margin:3%; 
+
+    &:hover{
+        .linkHoverAnimation();
+    }
+
+}
+
+.getStarted, .aboutUs{
+    position: relative;
+    left: 450px;
+}
+
+.testimonials{
+    display:flex;
+    justify-content:space-between;
+    margin:3%;
+
+
+
+    .testH3{
+        border:1px solid red;
+        font-size:4.5rem;
+        margin-bottom:1%;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }// end of testimonials testH3
+
+    .testP{
+        font-size: 3rem;
+        font-style:italic;
+        text-align: center;
+    }
+}// end of testimonials
