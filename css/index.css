@@ -216,6 +216,11 @@ h4 {
   animation-name: pulse;
   animation-duration: 5s;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 .mktHeader {
   background-image: url("../img/indexImgMain.jpg");
   padding: 1%;
