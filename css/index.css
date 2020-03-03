@@ -288,16 +288,17 @@ header h2 {
   animation-name: pulse;
   animation-duration: 5s;
 }
-img {
+.test {
+  border-radius: 50px;
   height: 200px;
   width: 200px;
-  border-radius: 75;
   transition: transform 0.2s;
 }
-img:hover {
+.test:hover {
   transform: scale(1.5);
 }
 i {
+  color: #FF4500;
   font-size: 2rem;
   margin-right: 1%;
 }
