@@ -2,14 +2,16 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-image: url("../img/navBarImg.jpg");
+    background-image: url("../img/navBarImgLarge.jpg");
     background-repeat: no-repeat;
-    // background-color:red;
+    background-position: top center;
     padding:1%;
+
+
 
     h1{ 
         font-size:7rem;
-        color: @navh1fontcolor;
+        color: @gainsboro;
         padding: 1%;
         background-color:transparent;
 
@@ -18,20 +20,26 @@
     .navBar{
         display:flex;
         justify-items: space-around;
-        width:75%;
         background-color:transparent;
+        width:75%;
+      
 
         nav{
             width:100%;
             display:flex;
             justify-content:center;
-            background-color:transparent;;
+            background-color:transparent;
+           
 
 
             a{
             .linkFontStyling();
-            background-color:transparent;
-            margin: 1%;
+            background-color: transparent;
+             margin: 1%;
+
+            &:hover{
+                .linkHoverAnimation();
+            }//navSection navBar nav a hover end
             }// navSection navBar nav a end
         }// nav end
     }// navSection navBar end
