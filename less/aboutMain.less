@@ -1,4 +1,5 @@
 .groups {
+    
     .projectLead{
         .displayFlexJustifyCenter();
         align-items: center;
@@ -6,6 +7,7 @@
         
         .proLead{
             .centeringAndAligning();
+            text-align:center;
             margin:1%;
             align-items: center;
             justify-content: center;
@@ -15,6 +17,10 @@
     .everyone{
         display:flex;
         justify-content:space-around;
+
+        @media @tablet{
+            flex-direction:column;
+        }
         // align-items: flex-start;
 
         .backendDeveloper{
@@ -25,15 +31,19 @@
                 .centeringAndAligning();
                 align-items: center;
                 justify-content: center;
+                text-align:center;
                 margin:1%;
             }// groups everone backendDeveloper bEndDev end
         }// groups everyone backendDeveloper end
     
         .frontendDeveloper{
             .displayFlexJustifyCenter();
-
+                @media @phone{
+                    flex-direction:column;
+                }
             .srReact, .jrReact{
                 .centeringAndAligning();
+                text-align:center;
                 margin:1%;
             }// groups everyone frontendDeveloper srReact jrReact 
         }// groups everyone frontendDeveloper end
@@ -41,8 +51,13 @@
         .userInterface {
             .displayFlexJustifyCenter();
 
+                @media @phone{
+                    flex-direction:column;
+                }
+
             .ui1, .ui2{
                 .centeringAndAligning();
+                text-align:center;
                 margin:1%;
             }// groups everyone userInterface ui1 ui2 end
         }// groups everyone userInterface end
@@ -51,11 +66,18 @@
     h3 {
         .teamInfoH3();
         margin:1%;
+        @media @tablet{
+            font-size:2rem;
+        }
     }// groups h3 end
 
     h4 {
         .teamInfoH4();
         margin:1%;
+
+        @media @tablet{
+            font-size:1.5rem;
+        }
     }// groups h4 end
 
     a{
@@ -83,8 +105,17 @@
     width:200px;
      transition: transform .2s;
 
+     @media @tablet{
+         transition:none;
+
+     }
+
      &:hover{
-                transform: scale(1.5);
+        transform: scale(1.5);
+
+        @media @tablet{
+            transform: none;
+        }
                  }
 }
 

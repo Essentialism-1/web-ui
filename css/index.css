@@ -275,6 +275,16 @@ header h2 {
   margin: 1%;
   background-color: #DCDCDC;
 }
+@media (max-width: 800px) {
+  header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
 .centerImageSection {
   display: flex;
   flex-direction: column;
@@ -426,6 +436,7 @@ header h2 {
 .groups .projectLead .proLead {
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin: 1%;
   align-items: center;
   justify-content: center;
@@ -433,6 +444,11 @@ header h2 {
 .groups .everyone {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .groups .everyone {
+    flex-direction: column;
+  }
 }
 .groups .everyone .backendDeveloper {
   display: flex;
@@ -443,11 +459,17 @@ header h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 1%;
 }
 .groups .everyone .frontendDeveloper {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .groups .everyone .frontendDeveloper {
+    flex-direction: column;
+  }
 }
 .groups .everyone .frontendDeveloper .srReact,
 .groups .everyone .frontendDeveloper .jrReact {
@@ -455,11 +477,17 @@ header h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 1%;
 }
 .groups .everyone .userInterface {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .groups .everyone .userInterface {
+    flex-direction: column;
+  }
 }
 .groups .everyone .userInterface .ui1,
 .groups .everyone .userInterface .ui2 {
@@ -467,6 +495,7 @@ header h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 1%;
 }
 .groups h3 {
@@ -475,11 +504,21 @@ header h2 {
   width: 100%;
   margin: 1%;
 }
+@media (max-width: 800px) {
+  .groups h3 {
+    font-size: 2rem;
+  }
+}
 .groups h4 {
   color: #FF4500;
   font-size: 2.5rem;
   width: 100%;
   margin: 1%;
+}
+@media (max-width: 800px) {
+  .groups h4 {
+    font-size: 1.5rem;
+  }
 }
 .groups a {
   text-decoration: none;
@@ -494,8 +533,18 @@ header h2 {
   width: 200px;
   transition: transform 0.2s;
 }
+@media (max-width: 800px) {
+  .test {
+    transition: none;
+  }
+}
 .test:hover {
   transform: scale(1.5);
+}
+@media (max-width: 800px) {
+  .test:hover {
+    transform: none;
+  }
 }
 i {
   color: #FF4500;
