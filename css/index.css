@@ -207,6 +207,13 @@ html {
   animation-name: pulse;
   animation-duration: 5s;
 }
+.mktHeader {
+  background-color: darkslategray;
+  padding: 1%;
+}
+.mktHeader .mktHeaderImg {
+  width: 90%;
+}
 header {
   display: flex;
   justify-content: center;
