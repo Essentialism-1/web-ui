@@ -120,7 +120,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -187,11 +186,21 @@ h4 {
   background-position: top center;
   padding: 1%;
 }
+@media (max-width: 800px) {
+  .navSection {
+    background-image: url("../img/navBarImg.jpg");
+  }
+}
 .navSection h1 {
   font-size: 7rem;
   color: #DCDCDC;
   padding: 1%;
   background-color: transparent;
+}
+@media (max-width: 800px) {
+  .navSection h1 {
+    font-size: 4rem;
+  }
 }
 .navSection .navBar {
   display: flex;
@@ -212,14 +221,19 @@ h4 {
   background-color: transparent;
   margin: 1%;
 }
+@media (max-width: 800px) {
+  .navSection .navBar nav a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .navSection .navBar nav a {
+    font-size: 1rem;
+  }
+}
 .navSection .navBar nav a:hover {
   animation-name: pulse;
   animation-duration: 5s;
-}
-@media (max-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
 }
 .mktHeader {
   background-image: url("../img/indexImgMain.jpg");
@@ -262,6 +276,12 @@ header h2 {
   justify-content: center;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .centerImageSection {
+    height: 50%;
+    align-items: center;
+  }
+}
 .centerButton {
   height: 75px;
   width: 300px;
@@ -280,6 +300,12 @@ header h2 {
 .aboutUs {
   position: relative;
   left: 450px;
+}
+@media (max-width: 800px) {
+  .getStarted,
+  .aboutUs {
+    position: static;
+  }
 }
 .testimonials {
   justify-content: space-between;
