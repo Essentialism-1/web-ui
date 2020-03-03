@@ -1,0 +1,313 @@
+@keyframes pulse {
+  0% {
+    color: #FF4500;
+  }
+  10% {
+    color: #FFF8DC;
+  }
+  20% {
+    color: #FF4500;
+  }
+  30% {
+    color: #FFF8DC;
+  }
+  40% {
+    color: #FF4500;
+  }
+  50% {
+    color: #FFF8DC;
+  }
+  60% {
+    color: #FF4500;
+  }
+  70% {
+    color: #FFF8DC;
+  }
+  80% {
+    color: #FF4500;
+  }
+  90% {
+    color: #FFF8DC;
+  }
+  100% {
+    color: #FF4500;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+  background-color: #2F4F4F;
+}
+html {
+  font-size: 62.5%;
+}
+.navSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/navBarImgLarge.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 1%;
+}
+.navSection h1 {
+  font-size: 7rem;
+  color: #DCDCDC;
+  padding: 1%;
+  background-color: transparent;
+}
+.navSection .navBar {
+  display: flex;
+  justify-items: space-around;
+  background-color: transparent;
+  width: 75%;
+}
+.navSection .navBar nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+.navSection .navBar nav a {
+  text-decoration: none;
+  color: #FF4500;
+  font-size: 3rem;
+  background-color: transparent;
+  margin: 1%;
+}
+.navSection .navBar nav a:hover {
+  animation-name: pulse;
+  animation-duration: 5s;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #DCDCDC;
+}
+header h2 {
+  color: #2F4F4F;
+  font-size: 5rem;
+  margin: 1%;
+  background-color: #DCDCDC;
+}
+.groups .projectLead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groups .projectLead .proLead {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  align-items: center;
+  justify-content: center;
+}
+.groups .everyone {
+  display: flex;
+  justify-content: space-around;
+}
+.groups .everyone .backendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .everyone .backendDeveloper .bEndDev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+.groups .everyone .frontendDeveloper {
+  display: flex;
+  justify-content: center;
+}
+.groups .everyone .frontendDeveloper .srReact,
+.groups .everyone .frontendDeveloper .jrReact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+.groups .everyone .userInterface {
+  display: flex;
+  justify-content: center;
+}
+.groups .everyone .userInterface .ui1,
+.groups .everyone .userInterface .ui2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+.groups h3 {
+  color: #DCDCDC;
+  font-size: 2.66rem;
+  width: 100%;
+  margin: 1%;
+}
+.groups h4 {
+  color: #FF4500;
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 1%;
+}
+.groups a {
+  text-decoration: none;
+}
+.groups a:hover {
+  animation-name: pulse;
+  animation-duration: 5s;
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 75;
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: scale(1.5);
+}
+i {
+  font-size: 2rem;
+  margin-right: 1%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+  margin-top: 2%;
+}
+footer a {
+  margin-left: 2%;
+}
