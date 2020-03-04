@@ -35,8 +35,12 @@
     
         .frontendDeveloper{
             .displayFlexJustifyCenter();
+            @media @tablet{
+                justify-content: space-around;
+            }//frontenddeveloper media tablet end
             @media @phone{
                 flex-direction:column;
+                align-items:center;
             }//frontendDeveloper media phone end
 
             .srReact, .jrReact{
@@ -48,8 +52,12 @@
 
         .userInterface {
             .displayFlexJustifyCenter();
+            @media @tablet{
+                justify-content: space-around;
+            }// userinterface media tablet end
             @media @phone{
                 flex-direction:column;
+                align-items:center;
             }// userInterface media phone end
 
             .ui1, .ui2{
@@ -96,6 +104,8 @@
 
     @media @tablet{
         transition:none;
+        height:300px;
+        width: 300px;
     }// test media tablet end
 
     &:hover{
