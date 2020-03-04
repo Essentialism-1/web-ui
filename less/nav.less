@@ -9,9 +9,7 @@
 
     @media @tablet{
         background-image: url("../img/navBarImg.jpg");
-    }
-
-
+    }// navsection media tablet end
 
     h1{ 
         font-size:7rem;
@@ -21,40 +19,36 @@
 
         @media @tablet{
           font-size:4rem;
-        }
-
+        }// h1 media tablet end
     }//navSection h1 end
 
     .navBar{
         display:flex;
         justify-items: space-around;
         background-color:transparent;
-        width:75%;
-      
+        width:75%;      
 
         nav{
             width:100%;
             display:flex;
             justify-content:center;
             background-color:transparent;
-           
-
 
             a{
             .linkFontStyling();
             background-color: transparent;
-             margin: 1%;
+            margin: 1%;
 
-             @media @tablet{
-                 font-size:1rem;
-             }
-             @media @phone{
-                 font-size: 1rem;
-             }
+            @media @tablet{
+                font-size:1rem;
+            }// navbar nav a media tablet end
+            @media @phone{
+                font-size: 1rem;
+            }// navbar nav a media phone end
 
-            &:hover{
-                .linkHoverAnimation();
-            }//navSection navBar nav a hover end
+                &:hover{
+                    .linkHoverAnimation();
+                }//navSection navBar nav a hover end
             }// navSection navBar nav a end
         }// nav end
     }// navSection navBar end

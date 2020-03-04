@@ -1,34 +1,40 @@
+.pictureCenteringDiv{
+    display:flex;
+    justify-content:center;
+}// picturecenteringdiv end
+
 .centerImageSection{
     display:flex;
     flex-direction:column;
     justify-content: center;
-    // align-items:center ;
-    width:100%;
+    align-items:center ;
+    width:85%;
 
     @media(min-width:800px){
         .centerImagePortrait{
             display:none;
-        }
-    }
+        }//centerImagePortait media minwidth end
+    }// media minwidth 800px end
     @media @tablet{
         height: 50%;
         align-items: center;
 
         .centerImageLarge{
             display: none;
-            .centerImagePortrait{
-                display:block;
-                padding-top:2%;
-            }
-        }
-        
-
+        .centerImagePortrait{
+            display:block;
+            padding-top:2%;
+        }// centerImagePortrait media tablet end
+        }// centerImageLarge media tablet end
     }// centerImageSection media Tablet end
-
-    @media @phone{
-
-    }// centerImageSection media PHone end
 }// centerImageSection end
+
+.centerButtondiv{
+    display:flex;
+    justify-content:center;
+    width: 100vw;
+}// centerbuttondiv end
+
 .centerButton {
     height:75px;
     width: 300px;
@@ -41,27 +47,24 @@
 
     &:hover{
         .linkHoverAnimation();
-    }
+    }// centerbutton hover end
    @media @tablet{
        width: 250px;
-   }
-}
+   }// centerbutton media tablet end
+}// centerbutton end
 
 .getStarted, .aboutUs{
-    position: relative;
-    left: 450px;
+    // position: relative;
+    // left: 450px;
 
     @media @tablet{
         display:none;
-
-    }
-}
+    }// getstarted about us media tablet end
+}// getstarted aboutus end
 
 .testimonials{
     justify-content:space-between;
     margin:3%;
-
-
 
     .testH3{
         // border:1px solid red;
@@ -83,13 +86,13 @@
 
         @media @tablet{
             width:500px;
-        }
+        }// testP media tablet end
 
         @media @phone{
             width:400px;
             position:relative;
             left:45px;
-        }
+        }// testp media phone end
     }// end of testimonials testP
 
     .testDF1{
@@ -100,8 +103,7 @@
 
         @media @tablet{
             flex-direction:column;
-
-        }
+        }// testdf1 media tablet end
     }// end of testimonials test df1
 
     .testDF2{
@@ -112,8 +114,8 @@
 
         @media @tablet{
             flex-direction: column;
-        }
-    }
+        }// testdf2 media tablet end
+    }// testdf2 end
 
     .testhappy{
         width: 500px;
@@ -122,12 +124,12 @@
 
         @media @phone{
             width:400px;
-        }
+        }// testhappy media phone end
     }//end of testimonials testhappy
 
     .fa-quote-right, .fa-quote-left{
         font-size: 5rem;
-    }
+    }// quotes left and right end
 
     .testBtn {
         height:75px;
@@ -143,11 +145,10 @@
     
         &:hover{
             .linkHoverAnimation();
-        }
+        }// testbtn hover end
         @media @tablet{
             left:90px;
-        }
-    }
-    
+        }// testbtn media tablet end
+    }// testbtn end    
 }// end of testimonials
 

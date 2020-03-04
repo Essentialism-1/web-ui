@@ -163,6 +163,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid red;
   background-color: #2F4F4F;
   font-family: 'PT Sans', sans-serif;
 }
@@ -237,10 +238,10 @@ h4 {
 }
 .mktHeader {
   background-image: url("../img/indexImgMain.jpg");
-  padding: 1%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-color: darkslategray;
+  background-size: cover;
   height: 666px;
 }
 @media (max-width: 800px) {
@@ -258,7 +259,7 @@ h4 {
   position: relative;
   right: 150px;
   top: 350px;
-  cursor: alias ;
+  cursor: alias;
 }
 .mktHeader .mktHeaderButton:hover {
   animation-name: pulse;
@@ -285,11 +286,16 @@ header h2 {
     font-size: 2rem;
   }
 }
+.pictureCenteringDiv {
+  display: flex;
+  justify-content: center;
+}
 .centerImageSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center ;
+  width: 85%;
 }
 @media (min-width: 800px) {
   .centerImageSection .centerImagePortrait {
@@ -309,6 +315,11 @@ header h2 {
     padding-top: 2%;
   }
 }
+.centerButtondiv {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 .centerButton {
   height: 75px;
   width: 300px;
@@ -327,11 +338,6 @@ header h2 {
   .centerButton {
     width: 250px;
   }
-}
-.getStarted,
-.aboutUs {
-  position: relative;
-  left: 450px;
 }
 @media (max-width: 800px) {
   .getStarted,
@@ -500,7 +506,7 @@ header h2 {
 }
 .groups h3 {
   color: #DCDCDC;
-  font-size: 2.66rem;
+  font-size: 2rem;
   width: 100%;
   margin: 1%;
 }
@@ -511,7 +517,7 @@ header h2 {
 }
 .groups h4 {
   color: #FF4500;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   width: 100%;
   margin: 1%;
 }
@@ -526,6 +532,9 @@ header h2 {
 .groups a:hover {
   animation-name: pulse;
   animation-duration: 5s;
+}
+.ind {
+  width: 200px;
 }
 .test {
   border-radius: 50px;
