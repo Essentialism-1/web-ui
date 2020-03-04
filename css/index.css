@@ -506,7 +506,7 @@ header h2 {
 }
 .groups h3 {
   color: #DCDCDC;
-  font-size: 2.66rem;
+  font-size: 2rem;
   width: 100%;
   margin: 1%;
 }
@@ -517,7 +517,7 @@ header h2 {
 }
 .groups h4 {
   color: #FF4500;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   width: 100%;
   margin: 1%;
 }
@@ -532,6 +532,9 @@ header h2 {
 .groups a:hover {
   animation-name: pulse;
   animation-duration: 5s;
+}
+.ind {
+  width: 200px;
 }
 .test {
   border-radius: 50px;
