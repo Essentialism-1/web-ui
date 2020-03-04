@@ -200,7 +200,7 @@ h4 {
 }
 @media (max-width: 800px) {
   .navSection h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 .navSection .navBar {
@@ -472,9 +472,15 @@ header h2 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .groups .everyone .frontendDeveloper {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 500px) {
   .groups .everyone .frontendDeveloper {
     flex-direction: column;
+    align-items: center;
   }
 }
 .groups .everyone .frontendDeveloper .srReact,
@@ -490,9 +496,15 @@ header h2 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .groups .everyone .userInterface {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 500px) {
   .groups .everyone .userInterface {
     flex-direction: column;
+    align-items: center;
   }
 }
 .groups .everyone .userInterface .ui1,
@@ -545,6 +557,8 @@ header h2 {
 @media (max-width: 800px) {
   .test {
     transition: none;
+    height: 300px;
+    width: 300px;
   }
 }
 .test:hover {
