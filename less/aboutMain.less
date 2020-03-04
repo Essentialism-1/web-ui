@@ -1,9 +1,8 @@
 .groups {
-    
     .projectLead{
         .displayFlexJustifyCenter();
         align-items: center;
-            justify-content: center;
+        justify-content: center;
         
         .proLead{
             .centeringAndAligning();
@@ -20,13 +19,11 @@
 
         @media @tablet{
             flex-direction:column;
-        }
-        // align-items: flex-start;
-
+        }// everyone media tablet end
+        
         .backendDeveloper{
             .displayFlexJustifyCenter();
         
-
             .bEndDev{
                 .centeringAndAligning();
                 align-items: center;
@@ -38,9 +35,10 @@
     
         .frontendDeveloper{
             .displayFlexJustifyCenter();
-                @media @phone{
-                    flex-direction:column;
-                }
+            @media @phone{
+                flex-direction:column;
+            }//frontendDeveloper media phone end
+
             .srReact, .jrReact{
                 .centeringAndAligning();
                 text-align:center;
@@ -50,10 +48,9 @@
 
         .userInterface {
             .displayFlexJustifyCenter();
-
-                @media @phone{
-                    flex-direction:column;
-                }
+            @media @phone{
+                flex-direction:column;
+            }// userInterface media phone end
 
             .ui1, .ui2{
                 .centeringAndAligning();
@@ -68,59 +65,46 @@
         margin:1%;
         @media @tablet{
             font-size:2rem;
-        }
+        }//h3 media tablet end
     }// groups h3 end
 
     h4 {
         .teamInfoH4();
         margin:1%;
-
         @media @tablet{
             font-size:1.5rem;
-        }
+        }// h4 media tablet end
     }// groups h4 end
 
     a{
         text-decoration: none;
         &:hover{
             .linkHoverAnimation();
-        }
+        }// a hover end
     }// groups a end
 }// groups end
-
-// img {
-//     height:200px;
-//     width:200px;
-//     border-radius:75;
-//     transition: transform .2s;
-
-//     &:hover{
-//         transform: scale(2);
-//     }// hover end
-// }// img end
 
 .test {
     border-radius:50px;
     height:200px;
     width:200px;
-     transition: transform .2s;
+    transition: transform .2s;
 
-     @media @tablet{
-         transition:none;
+    @media @tablet{
+        transition:none;
+    }// test media tablet end
 
-     }
-
-     &:hover{
+    &:hover{
         transform: scale(1.5);
 
         @media @tablet{
             transform: none;
-        }
-                 }
-}
+        }// hover media tablet end
+    }// test hover end
+}// test end
 
 i{
     color:@orangeRed;
-font-size:2rem;
-margin-right:1%;
+    font-size:2rem;
+    margin-right:1%;
 }// i end

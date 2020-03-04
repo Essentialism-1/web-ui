@@ -1,15 +1,16 @@
 .mktHeader{
     background-image: url("../img/indexImgMain.jpg");
-    padding:1%;
     background-repeat:no-repeat;
-    background-position:top center;
+    background-position:center;
     background-color:darkslategray;
+    background-size:cover;
     height:666px;
 
     @media @tablet{
         display:none;
-    }
-    .mktHeaderButton {
+    }// mktheader media tablet end
+
+    .mktHeaderButton{
         height:75px;
         width: 300px;
         font-size:3rem;
@@ -19,12 +20,10 @@
         position: relative;
         right: 150px;
         top: 350px;
-        cursor: alias ;
-
+        cursor: alias;
 
         &:hover{
             .linkHoverAnimation();
-        }
-
+        }// mktheaderbutton hover end
     }// mktHeaderImg end
 }// mktheader end
