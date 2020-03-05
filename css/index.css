@@ -236,6 +236,26 @@ h4 {
   animation-name: pulse;
   animation-duration: 5s;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+  margin-top: 2%;
+}
+@media (max-width: 800px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+footer a {
+  margin-left: 2%;
+}
+@media (max-width: 800px) {
+  footer a {
+    font-size: 1rem;
+  }
+}
 .mktHeader {
   background-image: url("../img/indexImgMain.jpg");
   background-repeat: no-repeat;
@@ -264,27 +284,6 @@ h4 {
 .mktHeader .mktHeaderButton:hover {
   animation-name: pulse;
   animation-duration: 5s;
-}
-header {
-  display: flex;
-  justify-content: center;
-  background-color: #DCDCDC;
-}
-header h2 {
-  color: #2F4F4F;
-  font-size: 5rem;
-  margin: 1%;
-  background-color: #DCDCDC;
-}
-@media (max-width: 800px) {
-  header h2 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 500px) {
-  header h2 {
-    font-size: 2rem;
-  }
 }
 .pictureCenteringDiv {
   display: flex;
@@ -434,6 +433,27 @@ header h2 {
     left: 90px;
   }
 }
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #DCDCDC;
+}
+header h2 {
+  color: #2F4F4F;
+  font-size: 5rem;
+  margin: 1%;
+  background-color: #DCDCDC;
+}
+@media (max-width: 800px) {
+  header h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
 .groups .projectLead {
   display: flex;
   align-items: center;
@@ -573,24 +593,4 @@ i {
   color: #FF4500;
   font-size: 2rem;
   margin-right: 1%;
-}
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 2rem;
-  margin-top: 2%;
-}
-@media (max-width: 800px) {
-  footer {
-    font-size: 1rem;
-  }
-}
-footer a {
-  margin-left: 2%;
-}
-@media (max-width: 800px) {
-  footer a {
-    font-size: 1rem;
-  }
 }
