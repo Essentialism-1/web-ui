@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Essentialism</title>
+        <title>Essentialism - Our App</title>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|PT+Sans|Roboto&display=swap" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,46 +17,46 @@
             <h1>Essentialism</h1>
             <div class='navBar'>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
+                    <a href="index.html" >Home</a>
+                    <a href="about.html" >About Us</a>
                     <a href="webapp.html">Our App</a>
                     <a href="#">Contact</a>
-                    <a href="https://frontend-hazel-three.now.sh/signup">Sign Up</a>
+                    <a href="https://frontend-hazel-three.now.sh/signup" >Sign Up</a>
                     <a href="https://frontend-hazel-three.now.sh/">Sign In</a>
                 </nav>
             </div>
         </section>
-        <header class="mktHeader">
-            <button class="mktHeaderButton" onclick="window.location.href ='https://frontend-hazel-three.now.sh/signup';">Get Started</button>
-        </header>
-        <section class="pictureCenteringDiv">
-            <section class="centerImageSection">
-                <img src="./img/mktMainCenterImg.JPG" class="centerImageLarge" alt="image that on the left describes how you choose your values, in the middle, if explains that you choose three to focus on and on the right it shows that you are allowed to create projects that helps you stay focused">
-                <img src="./img/mktMainCenterImg portrait.JPG" class="centerImagePortrait" alt="image that on the top describes how you choose your values, in the middle it explains that you choose three to focus on and the bottom it shows that you are allowed to create projects that help you stay focused ">
-                <div class="centerButtondiv">
-                    <button class="centerButton getStarted" onclick="window.location.href ='https://frontend-hazel-three.now.sh/signup';">Get Started</button>
-                    <button class="centerButton aboutUs" onclick="window.location.href ='about.html';">About Us</button>
-                </div>
-            </section>
-        </section>
-        <section class="testimonials">
-            <div class="testDF1">
-                <div class="test1">
-                    <p class="testH3">Testimonial 1</p>
-                    <p class="testP"><i class="fas fa-quote-left"></i>In a world with everything shouting for your attention, the disciplined pursuit of less has never been more needed. Enter Essentialism. The Way of the Essentialist involves doing less, but better, so you can make the highest possible contribution.<i class="fas fa-quote-right"></i> </p>
-                    <button class="testBtn" onclick="window.location.href ='https://frontend-hazel-three.now.sh/signup';">Get Started</button>
-                </div>
-                <img src="./img/happy.jpg" class="testhappy" alt="book titled happy">
+        <header>
+            <h2>Whats Essential to You?</h2>
+        </header>   
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button>
+            <div class="carousel__track-conntainer">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="./img/slide_1.JPG" alt="alternative text">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./img/slide_1.JPG" alt="alternative text">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./img/slide_1.JPG" alt="alternative text">
+                    </li>
+                </ul>
             </div>
-            <div class="testDF2">
-                <div class="test2">
-                    <p class="testH3">Testimonial 2</p>
-                    <p class="testP"><i class="fas fa-quote-left"></i> It’s not about getting more done in less time or getting less done. It’s about getting only the right things done. It’s about regaining control of our own choices about where to spend our time and energies instead of giving others implicit permission to choose for us. The first step to essentialism is identifying your values.<i class="fas fa-quote-right"></i></p>
-                    <button class="testBtn" onclick="window.location.href ='https://frontend-hazel-three.now.sh/signup';">Get Started</button>
-                </div>
-                <img src="./img/ben-white-4K2lIP0zc_k-unsplash.jpg" class="testhappy" alt="little boy laughing on bench">
+            <button class="carousel__button carousel__button--right">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide is-hidden"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
-        </section>
+        </div>
+
+
         <footer>
             <i class="fas fa-copyright"></i>Copyright 2020
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@ndvn?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Andre Iv"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Andre Iv</span></a>
@@ -64,5 +64,6 @@
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@benwhitephotography?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ben White"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Ben White</span></a>
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jfelise?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Josh Felise"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Josh Felise</span></a>
         </footer>
+        <script src="./js/carousel.js"></script>
     </body>
 </html>
